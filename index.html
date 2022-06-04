@@ -10,22 +10,78 @@
     </head>
     <body>
         <header>
-            <div class="conteinerHead">
+            <div class="containerHead">
                 <div class="logoHead">
                     <label>Nombre del formulario</label>
                 </div>
                 <nav class="nav">
                     <a href="index.html">Inicio</a>
-                    <a href="">Quienes somos</a>
-                    <a href="">Contacto</a>
+                    <a href="#">Quienes somos</a>
+                    <a href="#">Contacto</a>
                 </nav>
             </div>   
         </header>
-        <form>
-            
-        </form>
-        <footer>
+        <form class="form">
+            <h2 class="tituloForm">Formulario</h2>
+            <div class="formContainer">
+                <div class="formGrupo">
+                    <input type="text" id="nombre" class="formInput" placeholder=" ">
+                    <label for="nombre" class="formLabel">Nombre:</label>
+                    <span class="formLine"></span>
+                </div>
+                <div class="formGrupo">
+                    <input type="text" id="apellido" class="formInput" placeholder=" ">
+                    <label for="apellido" class="formLabel">Apellido:</label>
+                    <span class="formLine"></span>
+                </div>
+                <div class="formGrupo">
+                    <input type="email" id="email" class="formInput" placeholder=" ">
+                    <label for="email" class="formLabel">Email:</label>
+                    <span class="formLine"></span>
+                </div>
+                <div class="formGrupo">
+                    <input type="number" id="edad" class="formInput" placeholder=" ">
+                    <label for="edad" class="formLabel">Edad:</label>
+                    <span class="formLine"></span>
+                </div>
+                <div class="formGrupoRadio">
+                    <label>Sexo:</label>
+                    <input type="radio" id="sexo_masculino" name="sexo" value="masculino" class="formInputRadio" placeholder=" ">
+                    <label for="masculino" class="formLabelRadio">Masculino</label>
+                    <input type="radio" id="sexo_femenino" name="sexo" value="femenino" class="formInputRadio" placeholder=" ">
+                    <label for="femenino" class="formLabelRadio">Femenino</label>
+                    <input type="radio" id="sexo_indefinido" name="sexo" value="indefinido" class="formInputRadio" placeholder=" ">
+                    <label for="indefinido" class="formLabelRadio">Persona rara que habla con E</label>
+                    <span class="formLine"></span>
+                </div>
+                <div class="formGrupoChk">
+                    <label>Temas de interes:</label>
+                    <input type="checkbox" id="deporte" class="formInputChk" placeholder=" ">
+                    <label for="deporte" class="formLabelChk">Deporte</label>
+                    <input type="checkbox" id="musica" class="formInputChk" placeholder=" ">
+                    <label for="musica" class="formLabelChk">Musica</label>
+                    <input type="checkbox" id="juegos" class="formInputChk" placeholder=" ">
+                    <label for="juegos" class="formLabelChk">Juegos</label>
+                    <input type="checkbox" id="tecnologia" class="formInputChk" placeholder=" ">
+                    <label for="tecnologia" class="formLabelChk">Tecnologia</label>
+                    <input type="checkbox" id="otros" class="formInputChk" placeholder=" ">
+                    <label for="otros" class="formLabelChk">Otros</label>
+                    <span class="formLine"></span>
+                </div>
+                <div class="formGrupo">
 
+                </div>
+                <div class="formGrupo">
+                    <label for="comment">Comentario:<br>
+                    <textarea name="comentario: " rows="5">Escribe tu comentario: </textarea>
+                </div>
+                <div class="formGrupo">
+                    <input type="submit" value="Enviar" class="formSubmit">
+                </div>
+            </div>
+        </form>
+        <footer class="footer">
+            <label>Nombre del formulario</label>
         </footer>
     </body>
 </html>
