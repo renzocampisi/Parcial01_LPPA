@@ -75,8 +75,16 @@ main {
 .form_Input_Error-activo {
     display: block;
 }
+.formulario_Grupo_Input_Radio {
+    display: flex;
+    flex-direction: column;
+}
 .form_Radio {
     margin-right: 5px;
+}
+.formulario_Grupo_Input_Checkbox {
+    display: flex;
+    flex-direction: column;
 }
 .form_Checkbox {
     margin-right: 5px;
