@@ -180,9 +180,7 @@ main {
 }
 /* Vista de PC */
 @media (min-width: 769px) {
-    .containerHead {
-
-    }
+    
     .logoHead {
         justify-content: left;
         width: 50%;
