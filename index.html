@@ -68,15 +68,15 @@
                     <label for="sexo" class="form_Label">Sexo</label>
                     <div class="div formulario_Grupo_Input">
                         <label class="form_Label">
-                            <input type="radio" name="sexo" value="hombre">
+                            <input class="form_Radio" type="radio" name="sexo" value="hombre">
                             Hombre
                         </label>
                         <label>
-                            <input type="radio" name="sexo" value="mujer">
+                            <input class="form_Radio" type="radio" name="sexo" value="mujer">
                             Mujer
                         </label>
                         <label>
-                            <input type="radio" name="sexo" value="otro">
+                            <input class="form_Radio" type="radio" name="sexo" value="otro">
                             Otro
                         </label>
                         
@@ -89,39 +89,40 @@
                     <label for="interes" class="form_Label">Temas de interes:</label>
                     <div class="div formulario_Grupo_Input">
                         <label>
-                            <input type="checkbox" name="interes" value="deporte">
+                            <input class="form_Checkbox" type="checkbox" name="interes" value="deporte">
                             Deportes
                         </label>
                         <label>
-                            <input type="checkbox" name="interes" value="musica">
+                            <input class="form_Checkbox" type="checkbox" name="interes" value="musica">
                             Musica
                         </label>
                         <label>
-                            <input type="checkbox" name="interes" value="juegos">
+                            <input class="form_Checkbox" type="checkbox" name="interes" value="juegos">
                             Jueogs
                         </label>
                         <label>
-                            <input type="checkbox" name="interes" value="tecnologia">
+                            <input class="form_Checkbox" type="checkbox" name="interes" value="tecnologia">
                             Tecnologia
                         </label>
                         <label>
-                            <input type="checkbox" name="interes" value="otros">
+                            <input class="form_Checkbox" type="checkbox" name="interes" value="otros">
                             Otros
                         </label>
                     </div>
                     <p class="form_Input_Error">Debe marcar una opcion</p>
                 </div>
                 
-                <label for="comment">Comentario:
-                <textarea name="comentario: " rows="5" cols="50">Escribe tu comentario: </textarea>
-                </label>
-                <div class="div form_Mensaje" id="form_Mensaje">
+                <div class="form_Comentario">
+                    <label>Comentario:</label>
+                     <textarea  name="comentario: " rows="5" cols="50">Escribe tu comentario: </textarea>
+                </div>
+                <div class="form_Mensaje" id="form_Mensaje">
                     <p>Debe completar todos los campos correctamente</p>
                 </div>
                 
                 <div class="div form_Grupo form_Grupo_Boton_Enviar">
                     <button type="submit" class="form_Boton">Enviar</button>
-                    <p class="form_Mesanje_Exito" id="form_Mensaje_Exito">
+                    <p class="form_Mensaje_Exito" id="form_Mensaje_Exito">
                         El formulario se envio correctamente!
                     </p>
                 </div>
