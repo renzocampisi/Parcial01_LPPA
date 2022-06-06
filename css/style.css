@@ -36,6 +36,7 @@ main {
     width: 90%;
     margin: auto;
     padding: 40px;
+    background-color: #d0c9c0;
 }
 .formulario {
     display: grid;
@@ -66,6 +67,86 @@ main {
     outline: none;
     box-shadow: 3px 0px 30px rgba(163 163 163, 0.4);
 }
+.form_Input_Error {
+    display: none;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.form_Input_Error-activo {
+    display: block;
+}
+.form_Radio {
+    margin-right: 5px;
+}
+.form_Checkbox {
+    margin-right: 5px;
+}
+.form_Comentario, .form_Mensaje, .form_Grupo_Boton_Enviar {
+    grid-column: span 2;
+}
+.form_Comentario {
+    display: flex;
+    flex-direction: column;
+}
+.form_Mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.form_Mensaje-activo {
+    display: block;
+}
+.form_Mensaje p {
+    margin: 0;
+}
+.form_Grupo_Boton_Enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_Boton {
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+.form_Boton:hover {
+    box-shadow: 3px 0px 30px rgba(163 163 163, 1);
+}
+.form_Mensaje_Exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+.form_Mensaje_Exito-activo {
+    display: block;
+}
+
+/* Estilo para la validacion */
+
+.form_Grupo-correcto .form_Label{
+    color: #1ed12d;
+    opacity: 1;
+}
+.form_Grupo-correcto .form_Input {
+    border: 3px solid #1ed12d;
+}
+.form_Grupo-incorrecto .form_Label{
+    color: #bb2929;
+}
+.form_Grupo-incorrecto .form_Input {
+    border: 3px solid #bb2929;
+}
 .footer {
     display: flex;
     align-items: center;
@@ -87,11 +168,14 @@ main {
         justify-content: space-between;
         width: 100%;
     }
-    .nav a {
-        
+    .formulario {
+        grid-template-columns: 1fr;
     }
-    .footer {
-
+    .form_Comentario, .form_Mensaje, .form_Grupo_Boton_Enviar {
+        grid-column: span 1;
+    }
+    .form_Boton {
+        width: 100%;
     }
 }
 /* Vista de PC */
