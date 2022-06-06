@@ -31,53 +31,40 @@ body {
     text-decoration: none;
     color: #ffffff;
 }
-
-.form {
-    margin: auto;
-    text-align: center;
+main {
+    max-width: 800px;
     width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    background-color: #ffffff;
+    margin: auto;
+    padding: 40px;
 }
-.tituloForm {
-    font-size: 2rem;
-    margin-bottom: .5em;
-}
-.formContainer {
-    margin-top: 3em;
+.formulario {
     display: grid;
-    gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
-.formGrupo {
-    position: relative;
-    --color: #5757577e;
-}
-.formInput {
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding: .6em .3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-}
-.formInput:focus + .formLabel, .formInput:not(:placeholder-shown) + .formLabel {
-    transform: translateY(-12px) scale(.7);
-    transform-origin: left top;
-    color: #3866f2;
-}
-.formLabel {
-    color: var(--color);
+.form_Label {
+    display: block;
+    font-weight: 500;
+    padding: 10px;
     cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
+}
+.formulario_Grupo_Input {
+    position: relative;
+}
+.form_Input {
+    width: 100%;
+    background-color: #ffffff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+.form_Input:focus {
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163 163 163, 0.4);
 }
 .footer {
     display: flex;
