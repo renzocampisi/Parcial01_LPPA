@@ -58,7 +58,7 @@
                 <div class="form_Grupo" id="grupo_Edad">
                     <label for="edad" class="form_Label">Edad</label>
                     <div class="div formulario_Grupo_Input">
-                        <input type="number" class="form_Input" name="edad" id="edad" placeholder=" ">
+                        <input type="text" class="form_Input" name="edad" id="edad" placeholder=" ">
                     </div>
                     <p class="form_Input_Error">Debe ingresar una edad correcta</p>
                 </div>
@@ -68,15 +68,15 @@
                     <label for="sexo" class="form_Label">Sexo</label>
                     <div class="div formulario_Grupo_Input_Radio">
                         <label class="form_Label">
-                            <input class="form_Radio" type="radio" name="sexo" value="hombre">
+                            <input class="form_Radio" type="radio" name="sexo">
                             Hombre
                         </label>
                         <label>
-                            <input class="form_Radio" type="radio" name="sexo" value="mujer">
+                            <input class="form_Radio" type="radio" name="sexo">
                             Mujer
                         </label>
                         <label>
-                            <input class="form_Radio" type="radio" name="sexo" value="otro">
+                            <input class="form_Radio" type="radio" name="sexo">
                             Otro
                         </label>
                         
@@ -98,7 +98,7 @@
                         </label>
                         <label>
                             <input class="form_Checkbox" type="checkbox" name="interes" value="juegos">
-                            Jueogs
+                            Juegos
                         </label>
                         <label>
                             <input class="form_Checkbox" type="checkbox" name="interes" value="tecnologia">
@@ -111,7 +111,16 @@
                     </div>
                     <p class="form_Input_Error">Debe marcar una opcion</p>
                 </div>
-                
+                <div class="form_Pais">
+                    <label for="pais" class="form_Label">Pais</label>
+                    <select>
+                        <option> </option>
+                        <option>Argentina</option>
+                        <option>Brasil</option>
+                        <option>Uruguay</option>
+                        <option>Chile</option>
+                    </select>
+                </div>
                 <div class="form_Comentario">
                     <label>Comentario:</label>
                      <textarea  name="comentario: " rows="5" >Escribe tu comentario: </textarea>
