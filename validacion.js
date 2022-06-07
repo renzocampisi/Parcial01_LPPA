@@ -16,10 +16,10 @@ const campos = {
     nombre: 'false',
     apellido: 'false',
     correo: 'false', 
-    edad: 'false', 
-    sexo: 'false', 
+    edad: 'false',
+    sexoInput: 'false',
     interes: 'false',
-    pais: 'false'
+    
 }
 
 /* Comprueba los campos */
@@ -79,16 +79,17 @@ const validarFormulario = (e) => {
             }
         break;
         case "sexo":
-            if(!document.querySelector('input[name="hombre"]:checked')) {
+            const sexoInput = document.getElementsByName('sexo');
+            if(sexoInput) {
                 document.getElementById('grupo_Sexo').classList.remove('form_Grupo-incorrecto');
                 document.getElementById('grupo_Sexo').classList.add('form_Grupo-correcto');
                 document.querySelector('#grupo_Sexo .form_Input_Error').classList.remove('form_Input_Error-activo');
-                campos['sexo'] = true;
-            }else {
+                campos['sexoInput'] = true;
+            } else {
                 document.getElementById('grupo_Sexo').classList.add('form_Grupo-incorrecto');
                 document.getElementById('grupo_Sexo').classList.remove('form_Grupo-correcto');
                 document.querySelector('#grupo_Sexo .form_Input_Error').classList.add('form_Input_Error-activo');
-                campos['sexo'] = false;
+                campos['sexoInput'] = false;
             }
         break;
         case "interes":
@@ -105,7 +106,16 @@ const validarFormulario = (e) => {
             } 
         break;
         case "pais":
-            
+            const pais=document.getElementById('pais').value;
+            if(pais != 0) {
+                document.getElementById('grupo_Sexo').classList.remove('form_Grupo-incorrecto');
+                document.getElementById('grupo_Sexo').classList.add('form_Grupo-correcto');
+                document.querySelector('#grupo_Sexo .form_Input_Error').classList.remove('form_Input_Error-activo');
+            } else {
+                document.getElementById('grupo_Sexo').classList.add('form_Grupo-incorrecto');
+                document.getElementById('grupo_Sexo').classList.remove('form_Grupo-correcto');
+                document.querySelector('#grupo_Sexo .form_Input_Error').classList.add('form_Input_Error-activo');
+            }
         break;
     }
 }
@@ -135,7 +145,7 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
     /* const intereses = document.getElementById('interes'); */
-    if(campos.nombre && campos.apellido && campos.correo && campos.edad == true) {
+    if(campos.nombre && campos.apellido && campos.correo && campos.edad && campos.sexoInput && campos.interes) {
         formulario.reset();
 
         document.getElementById('form_Mensaje_Exito').classList.add('form_Mensaje_Exito-activo')
@@ -147,8 +157,7 @@ formulario.addEventListener('submit', (e) => {
             correcto.classList.remove('form_Grupo-correcto');
         })
     } else {
-        document.getElementById('form_Mesanje_Exito').classList.remove('form_Mensaje_Exito-activo')
-        document.getElementById('form_Mensaje').classList.add('form_Mensaje-activo');
+        document.getElementById('form_Mensaje').classList.remove('form_Mensaje-activo');
     }
 });
 
