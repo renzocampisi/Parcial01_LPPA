@@ -12,6 +12,7 @@ const expresiones = {
 	
 }
 
+/* Al estar en false, no valida y no envia el formulario */
 const campos = {
     nombre: 'false',
     apellido: 'false',
