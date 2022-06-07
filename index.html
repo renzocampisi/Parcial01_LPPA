@@ -12,7 +12,7 @@
         <header>
             <div class="containerHead">
                 <div class="logoHead">
-                    <label>Nombre del formulario</label>
+                    <label>Parcial LPPA</label>
                 </div>
                 <nav class="nav">
                     <a href="index.html">Inicio</a>
@@ -22,7 +22,7 @@
             </div>   
         </header>
         <main>
-            <div class="div form_Titulo">
+            <div class="form_Titulo">
                 <p>Formulario</p>
             </div>
             <form action="" class="formulario" id="formulario">
@@ -66,8 +66,8 @@
                 <!-- Grupo: Sexo -->
                 <div class="form_Grupo" id="grupo_Sexo">
                     <label for="sexo" class="form_Label">Sexo</label>
-                    <div class="div formulario_Grupo_Input_Radio">
-                        <label class="form_Label">
+                    <div class="formulario_Grupo_Input_Radio">
+                        <label>
                             <input class="form_Radio" type="radio" name="sexo">
                             Hombre
                         </label>
@@ -87,25 +87,25 @@
                 <!-- Grupo: Interes -->
                 <div class="form_Grupo" id="grupo_Interes">
                     <label for="interes" class="form_Label">Temas de interes:</label>
-                    <div class="div formulario_Grupo_Input_Checkbox">
+                    <div class="formulario_Grupo_Input_Checkbox" id="interes">
                         <label>
-                            <input class="form_Checkbox" type="checkbox" name="interes" value="deporte">
+                            <input class="form_Checkbox" type="checkbox" name="interes" id="deporte">
                             Deportes
                         </label>
                         <label>
-                            <input class="form_Checkbox" type="checkbox" name="interes" value="musica">
+                            <input class="form_Checkbox" type="checkbox" name="interes" id="musica">
                             Musica
                         </label>
                         <label>
-                            <input class="form_Checkbox" type="checkbox" name="interes" value="juegos">
+                            <input class="form_Checkbox" type="checkbox" name="interes" id="juegos">
                             Juegos
                         </label>
                         <label>
-                            <input class="form_Checkbox" type="checkbox" name="interes" value="tecnologia">
+                            <input class="form_Checkbox" type="checkbox" name="interes" id="tecnologia">
                             Tecnologia
                         </label>
                         <label>
-                            <input class="form_Checkbox" type="checkbox" name="interes" value="otros">
+                            <input class="form_Checkbox" type="checkbox" name="interes" id="otros">
                             Otros
                         </label>
                     </div>
@@ -113,12 +113,12 @@
                 </div>
                 <div class="form_Pais">
                     <label for="pais" class="form_Label">Pais</label>
-                    <select>
-                        <option> </option>
-                        <option>Argentina</option>
-                        <option>Brasil</option>
-                        <option>Uruguay</option>
-                        <option>Chile</option>
+                    <select id="pais">
+                        <option value="0"> </option>
+                        <option value="1">Argentina</option>
+                        <option value="2">Brasil</option>
+                        <option value="3">Uruguay</option>
+                        <option value="4">Chile</option>
                     </select>
                 </div>
                 <div class="form_Comentario">
@@ -138,7 +138,7 @@
             </form>
         </main>
         <footer class="footer">
-            <label>Nombre del formulario</label>
+            <label>2022 | Renzo Campisi - Todos los derechos reservados</label>
         </footer>
 
         <script src="validacion.js"></script>
