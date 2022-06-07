@@ -110,19 +110,6 @@ const validarFormulario = (e) => {
     }
 }
 
-/* const validarEdad = () => {
-    const inputEdad = document.getElementById('edad')
-
-    if(inputEdad>0 && inputEdad<100){
-        document.getElementById('grupo_Edad').classList.remove('form_Grupo-incorrecto');
-        document.getElementById('grupo_Edad').classList.add('form_Grupo-correcto');
-        document.querySelector('#grupo_Edad .form_Input_Error').classList.remove('form_Input_Error-activo');
-    } else {
-        document.getElementById('grupo_Edad').classList.add('form_Grupo-incorrecto');
-        document.getElementById('grupo_Edad').classList.remove('form_Grupo-correcto');
-        document.querySelector('#grupo_Edad .form_Input_Error').classList.add('form_Input_Error-activo');
-    }
-} */
 /* Funcion para validar el/los campos y reducir codigo */
 /* Expresion = que expresion se quiere utilizar para validar */
 /* input = sale extrae del evento (e.target) */
@@ -148,7 +135,7 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
     /* const intereses = document.getElementById('interes'); */
-    if(campos.nombre && campos.apellido && campos.correo && campos.edad == null) {
+    if(campos.nombre && campos.apellido && campos.correo && campos.edad == true) {
         formulario.reset();
 
         document.getElementById('form_Mensaje_Exito').classList.add('form_Mensaje_Exito-activo')
@@ -160,6 +147,7 @@ formulario.addEventListener('submit', (e) => {
             correcto.classList.remove('form_Grupo-correcto');
         })
     } else {
+        document.getElementById('form_Mesanje_Exito').classList.remove('form_Mensaje_Exito-activo')
         document.getElementById('form_Mensaje').classList.add('form_Mensaje-activo');
     }
 });
