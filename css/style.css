@@ -19,12 +19,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
     height: 50px;
     color: #ffffff;
 }
 .nav {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 .nav a {
     margin-left: 15px;
@@ -38,6 +40,13 @@ main {
     padding: 40px;
     background-color: #d0c9c0;
 }
+.form_Titulo p {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .formulario {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -45,7 +54,8 @@ main {
 }
 .form_Label {
     display: block;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
     padding: 10px;
     cursor: pointer;
 }
@@ -69,8 +79,11 @@ main {
 }
 .form_Input_Error {
     display: none;
-    font-size: 12px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
     margin-bottom: 0;
+    color: #f66060;
 }
 .form_Input_Error-activo {
     display: block;
@@ -132,9 +145,15 @@ main {
     box-shadow: 3px 0px 30px rgba(163 163 163, 1);
 }
 .form_Mensaje_Exito {
-    font-size: 14px;
-    color: #119200;
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #119200;
+    padding: 0 15px;
+    border-radius: 3px;
     display: none;
+    font-size: 14px;
 }
 .form_Mensaje_Exito-activo {
     display: block;
@@ -157,6 +176,7 @@ main {
 }
 .footer {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: auto;
     width: 100%;
